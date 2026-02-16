@@ -1,0 +1,26 @@
+# Zero.p Configuration File
+
+settings:
+  scoping:
+    include:
+      - scope1
+      - scope2
+    exclude:
+      - scope3
+  bug_types:
+    - type1
+    - type2
+    - type3
+  proxies:
+    - proxy1
+    - proxy2
+  telegram_webhook: "your_telegram_webhook_url"
+  tool_configurations:
+    tool1:
+      setting1: value1
+      setting2: value2
+    tool2:
+      setting1: value1
+      setting2: value2
+
+# Last updated: 2026-02-16 22:07:14 UTC
