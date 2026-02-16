@@ -1,26 +1,32 @@
-# Zero.p Configuration File
+# Security Testing Framework Configuration
 
-settings:
-  scoping:
-    include:
-      - scope1
-      - scope2
-    exclude:
-      - scope3
-  bug_types:
-    - type1
-    - type2
-    - type3
-  proxies:
-    - proxy1
-    - proxy2
-  telegram_webhook: "your_telegram_webhook_url"
-  tool_configurations:
-    tool1:
-      setting1: value1
-      setting2: value2
-    tool2:
-      setting1: value1
-      setting2: value2
+# Tool Paths
+tool_paths:
+  - path_to_tool_1: '/path/to/tool1'
+  - path_to_tool_2: '/path/to/tool2'
 
-# Last updated: 2026-02-16 22:07:14 UTC
+# Payload Sources
+payload_sources:
+  - source_1: '/path/to/payloads/source1'
+  - source_2: '/path/to/payloads/source2'
+
+# Proxy Settings
+proxy:
+  host: 'proxy.example.com'
+  port: 8080
+
+# Telegram Webhook
+telegram:
+  webhook_url: 'https://api.telegram.org/bot<token>/sendMessage'
+
+# Scanning Parameters
+scanning_parameters:
+  scan_timeout: 60
+  max_retries: 3
+  include_subdomains: true
+  follow_redirects: false
+
+# Additional Configuration Options
+additional_options:
+  log_level: 'info'
+  output_format: 'json'
