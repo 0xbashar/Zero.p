@@ -1,32 +1,13 @@
-# Security Testing Framework Configuration
-
-# Tool Paths
-tool_paths:
-  - path_to_tool_1: '/path/to/tool1'
-  - path_to_tool_2: '/path/to/tool2'
-
-# Payload Sources
-payload_sources:
-  - source_1: '/path/to/payloads/source1'
-  - source_2: '/path/to/payloads/source2'
-
-# Proxy Settings
-proxy:
-  host: 'proxy.example.com'
-  port: 8080
-
-# Telegram Webhook
+target_domain: "example.com"
+scan_options:
+  option1: true
+  option2: false
+webhook:
+  url: "https://your-webhook-url.com"
+  secret: "your-webhook-secret"
 telegram:
-  webhook_url: 'https://api.telegram.org/bot<token>/sendMessage'
-
-# Scanning Parameters
-scanning_parameters:
-  scan_timeout: 60
-  max_retries: 3
-  include_subdomains: true
-  follow_redirects: false
-
-# Additional Configuration Options
-additional_options:
-  log_level: 'info'
-  output_format: 'json'
+  bot_token: "your-telegram-bot-token"
+  chat_id: "your-chat-id"
+tool_paths:
+  tool1: "/path/to/tool1"
+  tool2: "/path/to/tool2"
