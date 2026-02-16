@@ -1,0 +1,29 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+built_distribution/
+dist/
+build/
+# Python egg information
+*.egg-info/
+
+# virtual environment
+.env
+
+# Ignore mypy and pydocstyle files
+.mypy_cache/
+.dmypy.json
+.darglint
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
